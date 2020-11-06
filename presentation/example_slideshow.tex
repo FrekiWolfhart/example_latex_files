@@ -1,0 +1,49 @@
+\documentclass{beamer} % Used to create a slideshow
+\usepackage{graphicx}
+
+% Classical title/author/date thing
+\title{Test of Beamer}
+\author{No one}
+\date{}
+
+\usetheme{Frankfurt} % Beamer themes for the slideshow
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+% In a slide show, sections create bullet points wich allows you to move between them easily
+\begin{frame} % Create a new frame, i.e. a new slideshow
+\frametitle{Test} % Puts the title of the frame
+
+\begin{itemize}
+	\item cat \pause % Pause is used to make elements appear one after the other
+	\item wolf \pause % With pause, you need to change slides to make the rest appear
+	\item lizard \pause
+	\item math % There is no point in making a pause when there is nothing else to print in the slide
+\end{itemize}
+\end{frame}
+
+\section{Felids}
+\begin{frame}
+\frametitle{cat}
+Cats are felids, which is a categories of animals part of the felidae family. % Text is like normale LaTeX
+\end{frame}
+
+\section{Image}
+\begin{frame}
+\includegraphics{images/image.png} %Works just like regular LaTeX
+\end{frame}
+
+\section{Columns}
+\begin{frame}
+\frametitle{Seaprate texts}
+\begin{columns}
+\column{.5\textwidth}
+This is a column, the left one, having exactly the first half of the slide for itself.
+\column{.5\textwidth}
+This is an other column, the right one, having the other half of the slide.
+\end{columns}
+\end{frame}
+
+\end{document}
